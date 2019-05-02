@@ -603,14 +603,14 @@ class MenuWrapper
 		puts "-------------------------MENU-----------------------------\n\n"
 		
 		puts "Ingresa el numero de cromosomas para trabajar"
-		numcromosomas = gets.chomp.to_i
+		numcromosomas = 100 "gets.chomp.to_i"
 		
 		if numcromosomas < 2 
 			puts "deben ser mas de 2 cromosomas, por defecto te asignaremos 4"
 			numcromosomas = 4
 		end
 		puts "Ingresa el tamaño que tendran los cromosomas"
-		tama = gets.chomp.to_i
+		tama = 4 "gets.chomp.to_i"
 		if tama < 4 
 			puts "se recomienda que el tamaño de los cromosomas sean mayor que 3
 			\n te asiganremos por defecto el tamaño 4"
@@ -618,7 +618,7 @@ class MenuWrapper
 		end
 		
 		puts "Ingresa el porcentaje de mutacion entre 1 y 3"
-		muta = gets.chomp.to_i
+		muta = 2 "gets.chomp.to_i"
 		
 		if muta > 3 || muta < 1
 			puts "deben ser un valor entero entre 1 y 3, te asignaremos 3 por defecto que muta poco"
@@ -637,7 +637,7 @@ class MenuWrapper
 			\n 2 -> pasan los mas variados por distancia entre aptitudes
 			\n 3 -> pasan los mas variados por metodos de las aptitudes no repetidas
 			\n 4 -> pasan los de mejor aptitud y mas variables por aptitudes no repetidas"
-			 option = gets.chomp.to_i
+			 option = 1 "gets.chomp.to_i"
 			if option <= 4
 			 valido = true
 			end
@@ -646,7 +646,7 @@ class MenuWrapper
 		case option
 			when 1
 			  puts "Ingrese la cantidad de los mejores que pasan"
-			  cantidadMejores = gets.chomp.to_i
+			  cantidadMejores =50 "gets.chomp.to_i"
 			  
 			  if cantidadMejores >= numcromosomas
 				puts "Nu pueden pasar todos los cromosomas, eso no es interesante :("
@@ -696,7 +696,7 @@ class MenuWrapper
 		end
 	
 		puts "desea ver una representacion grafica de la solución? Y/N"
-		graph = gets.chomp
+		graph = 'y' "gets.chomcondor inputs in excecution timep"
 		puts "------------------------------------------------------------"
 		
 		if graph == 'Y' || graph == 'y'
