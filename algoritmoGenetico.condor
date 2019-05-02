@@ -5,6 +5,7 @@ arguments	= algoritmoGenetico.sh
 should_transfer_files   = YES
 transfer_input_files    = algoritmoGenetico.sh,algoritmoGenetico.rb
 when_to_transfer_output = ON_EXIT
+input			= test.data
 output                  = out.algoritmoGenetico.$(Process).txt
 error                   = err.algoritmoGenetico.$(Process).txt
 log                     = log.algoritmoGenetico.$(Process).txt
