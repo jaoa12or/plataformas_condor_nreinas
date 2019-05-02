@@ -610,7 +610,7 @@ class MenuWrapper
 			numcromosomas = 4
 		end
 		puts "Ingresa el tamaño que tendran los cromosomas"
-		tama = 4 #gets.chomp.to_i
+		tama = 15 #gets.chomp.to_i
 		if tama < 4 
 			puts "se recomienda que el tamaño de los cromosomas sean mayor que 3
 			\n te asiganremos por defecto el tamaño 4"
