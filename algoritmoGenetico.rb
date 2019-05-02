@@ -646,7 +646,7 @@ class MenuWrapper
 		case option
 			when 1
 			  puts "Ingrese la cantidad de los mejores que pasan"
-			  cantidadMejores =50 "gets.chomp.to_i"
+			  cantidadMejores =50 #gets.chomp.to_i
 			  
 			  if cantidadMejores >= numcromosomas
 				puts "Nu pueden pasar todos los cromosomas, eso no es interesante :("
