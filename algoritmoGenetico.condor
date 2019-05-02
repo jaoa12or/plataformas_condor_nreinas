@@ -1,0 +1,11 @@
+universe 	= docker
+docker_image	= ruby
+executable 	= /bin/bash
+arguments	= algoritmoGenetico.sh 	
+should_transfer_files   = YES
+transfer_input_files    = algoritmoGenetico.sh,algoritmoGenetico.rb
+when_to_transfer_output = ON_EXIT
+output                  = out.algoritmoGenetico.$(Process).txt
+error                   = err.algoritmoGenetico.$(Process).txt
+log                     = log.algoritmoGenetico.$(Process).txt
+queue 1
